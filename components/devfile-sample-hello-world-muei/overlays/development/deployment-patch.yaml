@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world-muei
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-xscr-tenant/test-app-laui/devfile-sample-hello-world-muei@sha256:e3ae72e3a2c987f53b2a39b04f002060a56aac84406e3df2bbdff4cdb98a396a
+        name: my-nginx
+        resources: {}
+status: {}
